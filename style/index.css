@@ -53,3 +53,71 @@ header {
   background: linear-gradient(to right, #ffd6d6, #81d3d9, #fec58e);
   -webkit-background-clip: text;
 }
+
+/* START PAGE */
+.startpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.maintitle {
+  text-align: center;
+  margin-top: 200px;
+  font-weight: 200;
+  font-size: 80px;
+  color: transparent;
+  background: linear-gradient(to right, #ffd6d6, #81d3d9, #fec58e);
+  -webkit-background-clip: text;
+}
+
+.mainimg > .img1 {
+  position: absolute;
+  bottom: 380px;
+  left: 260px;
+  width: 300px;
+  height: 300px;
+}
+
+.mainimg > .img2 {
+  position: absolute;
+  bottom: 340px;
+  right: 320px;
+  width: 150px;
+  height: 150px;
+}
+
+.mainimg > .img3 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 208px;
+  height: 307px;
+}
+.mainimg > .img4 {
+  position: absolute;
+  bottom: 400px;
+  right: 0px;
+  width: 204px;
+  height: 300px;
+}
+
+.mainimg > .img5 {
+  position: absolute;
+  bottom: 0px;
+  right: 80px;
+  width: 417px;
+  height: 206px;
+}
+
+.lefttext {
+  position: absolute;
+  left: 40px;
+  top: 120px;
+
+  font-size: 22px;
+
+  transform-origin: left;
+  transform: rotate(90deg);
+}
