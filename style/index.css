@@ -63,10 +63,16 @@ header {
 }
 
 .maintitle {
+  display: none;
+}
+
+.maintitle > ul,
+.typing > ul {
   text-align: center;
-  margin-top: 200px;
+  margin-top: 300px;
   font-weight: 200;
   font-size: 80px;
+  list-style: none;
   color: transparent;
   background: linear-gradient(to right, #ffd6d6, #81d3d9, #fec58e);
   -webkit-background-clip: text;
@@ -120,4 +126,20 @@ header {
 
   transform-origin: left;
   transform: rotate(90deg);
+  color: transparent;
+  background: linear-gradient(to right, #ffd6d6, #81d3d9, #fec58e);
+  -webkit-background-clip: text;
+}
+
+.righttext {
+  position: absolute;
+  right: -320px;
+  top: 350px;
+  font-size: 22px;
+
+  transform-origin: left;
+  transform: rotate(90deg);
+  color: transparent;
+  background: linear-gradient(to right, #ffd6d6, #81d3d9, #fec58e);
+  -webkit-background-clip: text;
 }
