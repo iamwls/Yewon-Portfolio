@@ -192,6 +192,27 @@ header {
   margin-left: 80px;
 }
 
+.about1img {
+  position: absolute;
+  width: 107px;
+  height: 107px;
+  right: 160px;
+  margin-top: 20px;
+}
+
+.about2img {
+  position: absolute;
+  width: 205px;
+  height: 205px;
+  margin-top: 60px;
+  right: 200px;
+}
+
+.about3img {
+  width: 410px;
+  height: 501px;
+}
+
 .face {
   margin-top: 50px;
   margin-left: 180px;
@@ -231,7 +252,7 @@ header {
 }
 
 .introduce {
-  margin-top: -230px;
+  margin-top: -730px;
   font-weight: normal;
   font-size: 16px;
 }
