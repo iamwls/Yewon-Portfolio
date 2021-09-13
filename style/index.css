@@ -18,6 +18,21 @@ li {
   flex-direction: column;
 }
 
+.lefttext,
+.righttext,
+.logo,
+.mainmenu > a,
+.maintitle > ul,
+.typing > ul,
+.minititle,
+.koname,
+.engname,
+.sectiontitle {
+  color: transparent;
+  background: linear-gradient(to right, #ffd6d6, #81d3d9, #fec58e);
+  -webkit-background-clip: text;
+}
+
 /* Header */
 header {
   position: fixed;
@@ -35,9 +50,6 @@ header {
   margin-left: 126px;
   font-weight: 600;
   font-size: 22px;
-  color: transparent;
-  background: linear-gradient(to right, #ffd6d6, #81d3d9, #fec58e);
-  -webkit-background-clip: text;
 }
 
 .mainmenu {
@@ -49,9 +61,6 @@ header {
 
 .mainmenu > a {
   margin-right: 30px;
-  color: transparent;
-  background: linear-gradient(to right, #ffd6d6, #81d3d9, #fec58e);
-  -webkit-background-clip: text;
 }
 
 /* START PAGE */
@@ -68,14 +77,31 @@ header {
 
 .maintitle > ul,
 .typing > ul {
+  position: absolute;
   text-align: center;
   margin-top: 300px;
+  margin-left: -180px;
   font-weight: 200;
   font-size: 80px;
   list-style: none;
-  color: transparent;
-  background: linear-gradient(to right, #ffd6d6, #81d3d9, #fec58e);
-  -webkit-background-clip: text;
+}
+
+.typing ul li.on {
+  display: inline-block;
+  animation-name: cursor;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+}
+@keyframes cursor {
+  0% {
+    border-right: 1px solid #fff;
+  }
+  50% {
+    border-right: 1px solid #81d3d9;
+  }
+  100% {
+    border-right: 1px solid #fff;
+  }
 }
 
 .mainimg > .img1 {
@@ -126,9 +152,6 @@ header {
 
   transform-origin: left;
   transform: rotate(90deg);
-  color: transparent;
-  background: linear-gradient(to right, #ffd6d6, #81d3d9, #fec58e);
-  -webkit-background-clip: text;
 }
 
 .righttext {
@@ -139,7 +162,88 @@ header {
 
   transform-origin: left;
   transform: rotate(90deg);
-  color: transparent;
-  background: linear-gradient(to right, #ffd6d6, #81d3d9, #fec58e);
-  -webkit-background-clip: text;
+}
+
+/* ABOUT PAGE */
+.aboutpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 800px;
+}
+
+.pagetitle > .minititle {
+  margin-top: 40px;
+  margin-left: 180px;
+  font-weight: 300;
+  font-size: 33px;
+}
+
+.nameimg {
+  display: flex;
+}
+
+.nameimg > .name {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+.face {
+  margin-top: 50px;
+  margin-left: 180px;
+  width: 268px;
+  height: 292px;
+}
+
+.name {
+  font-size: 28px;
+}
+.koname {
+  font-weight: 500;
+
+  margin-right: 10px;
+}
+
+.engname {
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.introduce,
+.education,
+.skills {
+  margin-left: 530px;
+}
+
+.introduce {
+  margin-top: -230px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.introduce > span {
+  font-weight: bold;
+  color: #50c1ca;
+}
+
+.introduce2 {
+  display: flex;
+  margin-top: 50px;
+}
+
+.sectiontitle {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.education {
+  margin-right: 100px;
+}
+
+.awardlist {
+  padding: 0;
 }
