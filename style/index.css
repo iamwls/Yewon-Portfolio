@@ -219,6 +219,17 @@ header {
   margin-left: 530px;
 }
 
+.line {
+  border-width: 0.5px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #ffd6d6, #81d3d9, #fec58e);
+  border-image-slice: 1;
+}
+
+.description {
+  margin-top: 16px;
+}
+
 .introduce {
   margin-top: -230px;
   font-weight: normal;
@@ -238,6 +249,7 @@ header {
 .sectiontitle {
   font-weight: 600;
   font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .education {
@@ -246,4 +258,151 @@ header {
 
 .awardlist {
   padding: 0;
+}
+
+.skills {
+  margin-top: 30px;
+}
+
+/* charts */
+
+.html_chart > .circular > .subject {
+  color: #81d3d9;
+}
+
+.css_chart > .circular > .subject {
+  color: #ffd6d6;
+}
+
+.js_chart > .circular > .subject {
+  color: #fec58e;
+}
+
+.figma_chart > .circular > .subject {
+  color: #accaf8;
+}
+
+.charts {
+  display: flex;
+}
+
+.circular {
+  position: relative;
+  height: 160px;
+  width: 160px;
+  margin-right: 44px;
+  margin-top: 30px;
+}
+
+.circular .inner {
+  position: absolute;
+  z-index: 6;
+  top: 27px;
+  left: 27px;
+  height: 106px;
+  width: 106px;
+  border-radius: 100%;
+  background: #ffffff;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.circular .subject {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: 600;
+  z-index: 10;
+}
+
+.circular .bar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #f6f6f6;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 160px, 160px, 80px);
+}
+
+.circular .bar .progress {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 80px, 160px, 0px);
+  background: #81d3d9;
+  stroke-linecap: round;
+}
+
+.css_chart .circular .bar .progress {
+  background: #ffd6d6;
+}
+
+.js_chart .circular .bar .progress {
+  background: #fec58e;
+}
+
+.figma_chart .circular .bar .progress {
+  background: #accaf8;
+}
+
+.circle .left .progress {
+  z-index: 4;
+  animation: left 4s linear both;
+}
+
+@keyframes left {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.circle .right {
+  z-index: 5;
+  transform: rotate(180deg);
+}
+
+.html_chart .circle .right .progress {
+  animation: right_html 2s linear both;
+  animation-delay: 4s;
+}
+
+.css_chart .circle .right .progress {
+  animation: right_css 2s linear both;
+  animation-delay: 4s;
+}
+
+.js_chart .circle .right .progress {
+  animation: right_js 2s linear both;
+  animation-delay: 4s;
+}
+
+.figma_chart .circle .right .progress {
+  animation: right_figma 2s linear both;
+  animation-delay: 4s;
+}
+
+@keyframes right_html {
+  100% {
+    transform: rotate(150deg);
+  }
+}
+
+@keyframes right_css {
+  100% {
+    transform: rotate(160deg);
+  }
+}
+
+@keyframes right_js {
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes right_figma {
+  100% {
+    transform: rotate(170deg);
+  }
 }
