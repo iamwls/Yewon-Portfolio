@@ -430,7 +430,7 @@ header {
 
 /* PROJECT PAGE */
 .projectpage {
-  margin-top: 60px;
+  margin-top: 120px;
   display: flex;
   flex-direction: column;
 }
@@ -442,8 +442,132 @@ header {
 }
 
 .projectmenu {
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.group1 {
+  display: flex;
+}
+
+.group2 {
+  display: flex;
+}
+
+.project_hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(91, 91, 91, 0.46);
+  cursor: pointer;
+}
+
+.the_moment > .project_hover:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.jubjub > .project_hover:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+.olio > .project_hover:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+.goout > .project_hover:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+.panorama > .project_hover:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+.ondo > .project_hover:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.project_title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  line-height: 30px;
+}
+
+.gotopage {
+  margin-top: 40px;
+  border: 0;
+  outline: 0;
+  width: 82px;
+  height: 25px;
+  font-weight: 100;
+  font-size: 12px;
+  border: solid 0.3px white;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
 }
 
 .the_moment {
+  width: 444px;
+  height: 306px;
+  background-image: url("../img/themoment.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+}
+
+.jubjub {
+  width: 261px;
+  height: 306px;
+  background-image: url("../img/jubjub.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+}
+
+.olio {
+  width: 260px;
+  height: 400px;
+  background-image: url("../img/olio.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.goout {
+  width: 261px;
+  height: 306px;
+  background-image: url("../img/goout.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+  margin-top: -70px;
+}
+
+.panorama {
+  width: 444px;
+  height: 306px;
+  background-image: url("../img/panorama.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+  margin-top: -70px;
+}
+
+.ondo {
+  width: 260px;
+  height: 212px;
+  background-image: url("../img/ondo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 20px;
 }
