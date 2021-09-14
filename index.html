@@ -50,7 +50,7 @@
         <div class="lefttext">2021 Portfolio by yewon</div>
       </section>
 
-      <!-- aboutpage -->
+      <!-- ABOUT PAGE -->
       <section id="about" class="aboutpage">
         <div class="pagetitle">
           <p class="minititle">About me</p>
@@ -163,6 +163,36 @@
           </div>
         </div>
       </section>
+
+      <!-- PROJECT PAGE -->
+      <section id="work" class="projectpage">
+        <div class="pagetitle">
+          <p class="minititle">Project</p>
+        </div>
+        <div class="projectmenu">
+          <div class="the_moment">
+            <div class="project_hover">
+              <div class="project_title">
+                학교가 불편한 순간<br />
+                the_moment
+              </div>
+              <button class="gotopage">Go to page</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
+
+    <!-- SCROLL ANIMATION -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="src/node_modules/jquery.scrollto/jquery.scrollTo.min.js"></script>
+    <script>
+      $(function () {
+        $(".mainmenu a").click(function (e) {
+          $.scrollTo(this.hash || 0, 800);
+          e.preventDefalut();
+        });
+      });
+    </script>
   </body>
 </html>

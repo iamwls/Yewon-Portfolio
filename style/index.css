@@ -7,6 +7,7 @@ body {
   width: 100%;
   height: 200%;
   overflow-x: hidden;
+  color: #363636;
 }
 
 li {
@@ -156,10 +157,9 @@ header {
 
 .righttext {
   position: absolute;
-  right: -320px;
+  right: -310px;
   top: 350px;
   font-size: 22px;
-
   transform-origin: left;
   transform: rotate(90deg);
 }
@@ -209,8 +209,8 @@ header {
 }
 
 .about3img {
-  width: 410px;
-  height: 501px;
+  width: 380px;
+  height: 471px;
 }
 
 .face {
@@ -252,7 +252,7 @@ header {
 }
 
 .introduce {
-  margin-top: -730px;
+  margin-top: -710px;
   font-weight: normal;
   font-size: 16px;
 }
@@ -426,4 +426,24 @@ header {
   100% {
     transform: rotate(170deg);
   }
+}
+
+/* PROJECT PAGE */
+.projectpage {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.minititle {
+  color: transparent;
+  background: linear-gradient(to right, #ffd6d6, #81d3d9, #fec58e);
+  -webkit-background-clip: text;
+}
+
+.projectmenu {
+  display: grid;
+}
+
+.the_moment {
 }
