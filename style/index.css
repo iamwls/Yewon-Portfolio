@@ -5,9 +5,16 @@ body {
   font-family: Poppins;
   font-style: normal;
   width: 100%;
-  height: 200%;
+  height: 210%;
   overflow-x: hidden;
   color: #363636;
+}
+
+body {
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
 li {
@@ -54,7 +61,7 @@ header {
 }
 
 .mainmenu {
-  margin-left: 970px;
+  margin-left: 940px;
   position: fixed;
   display: flex;
   font-size: 16px;
@@ -445,7 +452,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-
   flex-direction: column;
 }
 
@@ -570,4 +576,63 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 20px;
+}
+
+/* LINKS PAGE */
+.linkspage {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+}
+
+.linkmenu {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 30px;
+  padding-bottom: 25px;
+  margin-right: 20px;
+  width: 220px;
+  height: 285px;
+  transition: 0.5s;
+  border-radius: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+.link:hover {
+  width: 230px;
+  height: 295px;
+}
+
+.linkimg {
+  margin-bottom: 170px;
+  margin-right: 145px;
+  width: 40px;
+  height: 40px;
+}
+
+#notion {
+  background-color: #81d3d9;
+}
+
+#github {
+  background-color: #ffd6d6;
+}
+
+#behance {
+  background-color: #fec58e;
+}
+
+#dribbble {
+  background-color: #accaf8;
 }
