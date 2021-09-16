@@ -56,11 +56,11 @@ $(window).ready(function () {
 
           //첫번째 문장으로 셋팅
           typingTxt = $(".maintitle>ul>li").eq(liIndex).text();
-          //타이핑 결과 모두 지우기
-          $(".typing ul li").html("");
+          // //타이핑 결과 모두 지우기
+          // $(".typing ul li").html("");
 
-          //반복시작
-          tyInt = setInterval(typing, 100);
+          // //반복시작
+          // tyInt = setInterval(typing, 100);
         }, 1000);
       }
     }
